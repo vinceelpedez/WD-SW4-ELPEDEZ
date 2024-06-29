@@ -4,24 +4,24 @@
 
 <br />
 <div align="center">
-  <a href="https://github.com/zyx-0314/">
+  <a href="https://app.daily.dev/vinceelpedez"><img src="https://api.daily.dev/devcards/v2/Yx3Al31hWxDrC1pA3kOvQ.png?r=abq&type=wide" width="652" alt="Vince's Dev Card"/></a>
+  <a href="https://github.com/vinceelpedez">
   <!-- TODO: If you want to add logo or banner you can add it here -->
-    <img src="./assets/img/nyebe_white.png" alt="Nyebe" width="130" height="100">
+    <img src="https://i.pinimg.com/564x/7d/63/a0/7d63a0eddd6418289bbd9c46c026d946.jpg"alt="ELPEDEZ" width="200" height="200">
+  </a>
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">Title</h3>
+  <h3 align="center">Seat Work 4</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">
-  Short Description. (Optional)
+  Features Display
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
-![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/WD-Template-Project)
 
+![](https://visit-counter.vercel.app/counter.png?https://github.com/vinceelpedez/WD-ELPEDEZ-SA3)
 ---
 
 <br />
@@ -55,15 +55,20 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
 
-Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+This project comprises a landing page and two feature pages: the first showcases interactive designs promoting the Philippines with captivating visuals, while the second details Reyna's abilities and character description using HTML and CSS with linked navigation buttons between pages.
+
+<h3>Project Description</h3>
+This project involves creating three web pages: a landing page and two feature pages. The landing page serves as the main entry point, linking to the first feature page, which promotes the Philippines with interactive and visually engaging designs. The second feature page focuses on detailing Reyna, a character from the game Valorant, highlighting her abilities and providing a brief description.
+
+<h3>Purpose</h3>
+The primary purpose is to showcase the Philippines as a desirable travel destination and to provide information about Reyna's character and abilities in Valorant. Each page is designed to attract and inform visitors, enhancing their understanding and appreciation through engaging content and aesthetic presentation.
+
+<h3>Key Components:</h3>
+
+Landing Page: Acts as the gateway with navigation links to feature pages.
+Feature Page 1 (Philippines Promotion): Utilizes interactive and visually appealing designs to highlight key attractions such as beaches, landscapes, cultural heritage, diving spots, and cuisine.
+Feature Page 2 (Reyna's Abilities): Details Reyna's character with descriptions and showcases her abilities using interactive elements like hover effects and animations.
 
 ### Key Components
 <!-- TODO: List of Key Components -->
@@ -76,7 +81,6 @@ Guiding Question:
 <!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 
 ## Rules, Practices and Principles
 1. Always use `WD-` in the front of the Title of the Project for the Subject followed by your custom naming.
