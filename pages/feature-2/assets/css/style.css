@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Calibri', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 15px;
+}
+
+.navdiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.reyna-button {
+    background: linear-gradient(145deg, #270e8a, #2b0b38);
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.reyna-button:hover {
+    background: linear-gradient(145deg, #30183a, #1a0f46);
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    position: relative;
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.header-content {
+    font-family: 'Gambetta', serif;
+}
+
+.header-content h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.5rem;
+    color: rgb(238, 228, 118);
+    outline: none;
+    text-align: center;
+}
+
+.header-content h1:hover {
+    font-variation-settings: "wght" 582;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    line-height: 150%;
+    text-align: center;
+    color: MintCream;
+    letter-spacing: .5px;
+}
+
+.main-1 img {
+    position: relative;
+    opacity: 0.9;
+    width: 100%;
+    height: 70%;
+}
+
+.spotlight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #000000;
+}
+
+.spotlight-card {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.spotlight-card img {
+    width: 100%;
+    height: 90%;
+    object-fit: fill;
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover img {
+    transform: scale(1.1);
+}
+
+.spotlight-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.spotlight-card:hover .spotlight-text {
+    transform: translateY(0);
+}
+
+.spotlight-text h1 {
+    margin: 10px 0;
+}
+
+.spotlight-text p {
+    font-size: 0.9em;
+}
+
+.footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
