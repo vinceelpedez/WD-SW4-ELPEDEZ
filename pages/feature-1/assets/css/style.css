@@ -1,0 +1,114 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* fallback color if image doesn't load */
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.navbar .navdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar button {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.navbar button:hover {
+    background-color: #2980b9;
+}
+
+/* Main content sections */
+.promo {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.promo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.promo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+}
+
+.promo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.spotlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+}
+
+.spotlight-item {
+    flex: 0 1 30%;
+    margin-bottom: 20px;
+}
+
+.spotlight-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.spotlight-item .text {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.spotlight-item h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.spotlight-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.footer p {
+    margin: 0;
+}
