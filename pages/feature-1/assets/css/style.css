@@ -1,19 +1,19 @@
-/* Resetting some default styles */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and Container styles */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* fallback color if image doesn't load */
+    background-color: #ffffff;
 }
 
-/* Navigation bar styles */
+
 .navbar {
-    background-color: #333;
+    background-color: #ffffff;
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -31,38 +31,116 @@ body {
     margin: 0 10px;
     border: none;
     border-radius: 5px;
-    background-color: #3498db;
+    background-color: #0b0e11;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .navbar button:hover {
-    background-color: #2980b9;
+    background-color: #32393d;
 }
 
-/* Main content sections */
-.promo {
+
+.header {
     text-align: center;
-    padding: 50px 20px;
+    padding: 100px 0;
+    background-image: url("../img/bg2.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #fff8f8;
 }
 
-.promo h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.header h1 {
+    font-size: clamp(3rem, 15vmin, 8rem);
+    line-height: 1.2;
 }
 
-.promo p {
+.underlined {
+    position: relative;
+}
+
+.underline-mask:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150%;
+    aspect-ratio: 3 / 1;
+    border-radius: 50%;
+    border: 6px solid #ff0000;
+    mask: conic-gradient(from 180deg, rgba(255, 255, 255, 0) 0 270deg, #c51414 0);
+}
+
+.underline-overflow {
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.underline-overflow:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    width: 150%;
+    aspect-ratio: 2.5 / 1;
+    border-radius: 50%;
+    border: 6px solid #e9e624;
+}
+
+.underline-clip:after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 150%;
+    aspect-ratio: 3 / 1;
+    border-radius: 50%;
+    border: 6px solid #0080ff;
+    clip-path: polygon(0 0, 50% 50%, 100% 0);
+}
+
+
+.promo {
+    position: relative;
+    overflow: hidden;
+}
+
+.promo-text {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+
+.promo-text h2 {
+    font-size: 3em;
+    font-family: 'Barabara';
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+.promo-text p {
     font-size: 1.2em;
     line-height: 1.6;
-    color: #555;
+    color: #000000;
+    text-align: justify;
 }
 
-.promo img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
+.spotlight {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 50px;
 }
+
+
 
 .spotlight {
     display: flex;
@@ -73,36 +151,50 @@ body {
 }
 
 .spotlight-item {
-    flex: 0 1 30%;
+    flex: 0 1 calc(30% - 20px);
     margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
 }
 
 .spotlight-item img {
     width: 100%;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.spotlight-item:hover img {
+    transform: scale(1.1);
 }
 
 .spotlight-item .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    background-color: #fff;
-    border-radius: 10px;
     text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.spotlight-item:hover .text {
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 .spotlight-item h2 {
-    font-size: 1.8em;
-    margin-bottom: 10px;
+    font-size: 1.5em;
+    margin-bottom: 5px;
 }
 
 .spotlight-item p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1em;
+    color: #333;
 }
 
-/* Footer styles */
 .footer {
     text-align: center;
-    background-color: #333;
+    background-color: #000000;
     color: #fff;
     padding: 10px 0;
     position: fixed;
